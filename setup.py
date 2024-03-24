@@ -8,9 +8,9 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-waiter',
-    version='0.2',
+    version='0.3',
     install_requires=[
-        "Django>=1.11,<3.3"
+        "Django>=1.11,<4.3"
     ],
     packages=find_packages(),
     include_package_data=True,
