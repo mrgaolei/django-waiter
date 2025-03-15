@@ -16,6 +16,12 @@ class DateTimeModel(models.Model):
 class UUID4Model(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 
+    class Meta:
+        abstract = True
+
 
 class UserModel(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT, verbose_name=_("User"))
+
+    class Meta:
+        abstract = True
